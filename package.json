@@ -1,0 +1,20 @@
+{
+  "name": "hw-19-nodejs",
+  "version": "1.0.0",
+  "description": "Learning SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassXXX": "node_modules/.bin/sass.cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tymokri/hw-19.git"
+  },
+  "author": "Kristina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tymokri/hw-19/issues"
+  },
+  "homepage": "https://github.com/tymokri/hw-19#readme"
+}
