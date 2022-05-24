@@ -6,6 +6,10 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
+
+    .col-left {
+      display: flex;
+    }
   }
   
   .header__img {
@@ -15,7 +19,7 @@
   .header__search-box {
     display: flex;
 
-    img {
+    svg {
       width: 100%;
       height: 100%;
     }
@@ -24,17 +28,16 @@
       height: 100%;
       padding-left: 20px;
       border: none;
-      font-family: "Circular Std", sans-serif;
     }
   }
 
   .header__menu-list {
     display: flex;
+
     column-gap: 16px;
 
     a {
       display: inline-block;
-      font-family: 'Circular Std', sans-serif;
       font-size: 17px;
       color: #000;
       text-decoration: none;
@@ -47,7 +50,7 @@
 
     :not(.active) a:not(.has_img):hover {
       transition: 0.3ms;
-      border-bottom: 2px solid #FD2E24;
+      border-bottom: 2px solid #000;
     }
   }
 }
