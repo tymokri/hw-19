@@ -12,17 +12,13 @@
     }
   }
   
-  .header__img {
+  &__img {
     margin-right: 120px;
   }
 
-  .header__search-box {
+  &__search-box {
     display: flex;
-
-    svg {
-      width: 100%;
-      height: 100%;
-    }
+    align-items: center;
 
     .header__input {
       height: 100%;
@@ -31,7 +27,7 @@
     }
   }
 
-  .header__menu-list {
+  &__menu-list {
     display: flex;
 
     column-gap: 16px;

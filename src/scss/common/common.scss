@@ -3,8 +3,32 @@ body {
 }
 
 .container {
-  width: 1330px;
+  max-width: 1330px;
   height: 100%;
   padding: 0 55px;
   margin: 0 auto;
+}
+
+@media (max-width: $breakpoint_xxl) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: $breakpoint_xl) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: $breakpoint_sm) {
+  .container {
+    max-width: 320px;
+  }
 }

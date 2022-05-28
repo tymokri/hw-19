@@ -82,12 +82,32 @@ body {
 }
 
 .container {
-  width: 1330px;
+  max-width: 1330px;
   height: 100%;
   padding: 0 55px;
   margin: 0 auto;
 }
 
+@media (max-width: 1330px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+  }
+}
 .header {
   padding-top: 46px;
 }
@@ -100,79 +120,56 @@ body {
 .header .row .col-left {
   display: flex;
 }
-.header .header__img {
+.header__img {
   margin-right: 120px;
 }
-.header .header__search-box {
+.header__search-box {
   display: flex;
+  align-items: center;
 }
-.header .header__search-box svg {
-  width: 100%;
-  height: 100%;
-}
-.header .header__search-box .header__input {
+.header__search-box .header__input {
   height: 100%;
   padding-left: 20px;
   border: none;
 }
-.header .header__menu-list {
+.header__menu-list {
   display: flex;
   column-gap: 16px;
 }
-.header .header__menu-list a {
+.header__menu-list a {
   display: inline-block;
   font-size: 17px;
   color: #000;
   text-decoration: none;
   padding: 3px 0;
 }
-.header .header__menu-list .active a {
+.header__menu-list .active a {
   border-bottom: 2px solid #000;
 }
-.header .header__menu-list :not(.active) a:not(.has_img):hover {
+.header__menu-list :not(.active) a:not(.has_img):hover {
   transition: 0.3ms;
   border-bottom: 2px solid #000;
 }
 
 @media (max-width: 1024px) {
-  .header .container {
-    max-width: 1024px;
-  }
-}
-@media (max-width: 768px) {
-  .header .container {
-    max-width: 768px;
-  }
-  .header .container .col-right {
+  .header .col-right {
     display: none;
   }
 }
 @media (max-width: 576px) {
-  .header .container {
-    max-width: 576px;
-  }
-  .header .container .row {
-    justify-content: center;
-  }
-}
-@media (max-width: 320px) {
-  .header .container {
-    max-width: 320px;
-    padding: 0 15px;
-  }
-  .header .container .row {
+  .header .row {
     display: block;
     text-align: center;
   }
-  .header .container .row .col-left {
+  .header .row .col-left {
     display: block;
     text-align: center;
   }
-  .header .container .row .col-left .header__img {
+  .header .row .col-left .header__img {
     margin-right: 0;
     margin-bottom: 30px;
   }
-  .header .container .row .col-left .header__search-box {
+  .header .row .col-left .header__search-box {
     justify-content: center;
   }
 }
