@@ -28,25 +28,35 @@
   }
 
   &__menu-list {
-    display: flex;
+    font-size: $font-xl;
 
-    column-gap: 16px;
+    ul {
+      column-gap: 40px;
 
-    a {
-      display: inline-block;
-      font-size: 17px;
-      color: #000;
-      text-decoration: none;
-      padding: 3px 0;
+      .active a {
+        border-bottom: 2px solid #000;
+      }
+
+      :not(.active) a:not([type="icon"]):hover {
+        transition: 0.3ms;
+        border-bottom: 2px solid #000;
+      }
+
+      [type="icon"] {
+        font-size: 20px;
+      }
     }
+  }
 
-    .active a {
-      border-bottom: 2px solid #000;
-    }
+  .form-control {
+    border: none;
+  }
 
-    :not(.active) a:not(.has_img):hover {
-      transition: 0.3ms;
-      border-bottom: 2px solid #000;
+  .navbar-collapse {
+    form {
+      input::placeholder {
+        color: $gray-color;
+      }
     }
   }
 }

@@ -1,4 +1,42 @@
-$breakpoint_xxl: 1330px;
-$breakpoint_xl: 1024px;
-$breakpoint_md: 768px;
-$breakpoint_sm: 576px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xs: 320px;
+
+$white-color: #fff;
+$black-color: #000;
+$gray-color: #9b9898;
+$blue-color: #001AA2;
+$red-color: #FD2E24;
+$accent-color: #F4DE4D;
+
+$font-sm: 13px;
+$font-md: 15px;
+$font-xl: 17px;
+$font-xxl: 22px;
+$font-xxxl: 30px;
+
+$font-w-normal: 400;
+$font-w-bold: 700;
+$font-w-ex-bold: 800;
+
+$font-secondary: "Poppins", sans-serif;
+
+.navbar-nav {
+  --bs-nav-link-color: $black-color;
+}
+
+.navbar {
+  --bs-navbar-hover-color: $black-color;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #fff,var(--bs-bg-opacity)!important;
+}
+
+.navbar {
+  --bs-navbar-hover-color: $black-color;
+  --background-color: $white-color;
+}
