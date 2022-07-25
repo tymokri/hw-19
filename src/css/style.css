@@ -138,6 +138,12 @@ a:hover {
   color: black;
 }
 
+.item-column-gap {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -229,48 +235,46 @@ a:hover {
   border: 1px #F4DE4D solid;
   border-radius: 14px;
 }
-.main .products {
-  width: calc(100% - 16px);
-  gap: 16px;
-}
-.main .products__items-left {
-  padding-right: 8px;
-}
-.main .products__items-right {
-  padding-left: 8px;
-}
-.main .products__items-left {
-  min-height: 100%;
-}
-.main .products__items-left div:last-child {
-  display: flex;
-  height: 100%;
-  column-gap: 8px;
-}
-.main .products__items-left div:last-child img {
-  width: calc(100% - 8px);
-  height: 100%;
-}
-.main .products__items-left div:not(:last-child) {
-  margin-bottom: 16px;
-}
-.main .products__items-right {
-  min-height: 100%;
-  min-width: 100%;
-}
-.main .products__items-right div:first-child {
-  display: flex;
-  height: 100%;
-  column-gap: 8px;
-}
-.main .products__items-right div:first-child img {
-  width: calc(100% - 8px);
-  height: 100%;
+.main .item-img-h {
+  display: inline-block;
+  width: 100%;
+  height: 175px;
   border-radius: 14px;
+  overflow: hidden;
 }
-.main .products__items-right div:not(:first-child) {
-  margin-bottom: 16px;
-  max-width: 100%;
+.main .item-img-v {
+  display: inline-block;
+  width: 100%;
+  height: 380px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.main .bg-df {
+  background-repeat: no-repeat;
+}
+.main .get-up-img {
+  background-image: url("../assets/img/get-up.png");
+}
+.main .summer-img {
+  background-image: url("../assets/img/summer.png");
+}
+.main .pink-girl-img {
+  background-image: url("../assets/img/pink-girl.png");
+}
+.main .curly-girl-img {
+  background-image: url("../assets/img/curly-girl.png");
+}
+.main .martini-girl-img {
+  background-image: url("../assets/img/martini-girl.png");
+}
+.main .white-girl-img {
+  background-image: url("../assets/img/white-girl.png");
+}
+.main .blue-girl-img {
+  background-image: url("../assets/img/blue-girl.png");
+}
+.main .red-girl-img {
+  background-image: url("../assets/img/red-girl.png");
 }
 .main a:hover {
   transform: scale(1.1);
@@ -374,37 +378,10 @@ a:hover {
   .main .explore {
     display: none;
   }
-  .main .products {
-    width: 100%;
-  }
 }
-@media (max-width: 992px) {
-  .main .products {
-    gap: unset;
-  }
-  .main .products__items-left {
-    padding-right: 8px;
-    width: calc(100% - 8px);
-  }
-  .main .products__items-right {
-    padding-left: 8px;
-    width: calc(100% - 8px);
-  }
-}
-@media (min-width: 320px) and (max-width: 576px) {
-  .main .text-blue-item-text,
-.main .text-red-item-text {
-    display: none;
-  }
-}
-@media (min-width: 320px) {
-  .main .products__items-left {
-    padding-right: 0;
-    width: 100%;
-  }
-  .main .products__items-right {
-    padding-left: 0;
-    width: 100%;
+@media (max-width: 768px) {
+  .main .bg-df {
+    background-position: center center;
   }
 }
 

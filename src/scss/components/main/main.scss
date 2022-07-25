@@ -10,58 +10,56 @@
     border-radius: 14px;
   }
 
-  .products {
-    width: calc(100% - 16px);
-    gap: 16px;
+  .item-img-h {
+    display: inline-block;
+    width: 100%;
+    height: 175px;
+    border-radius: 14px;
+    overflow: hidden;
   }
 
-  .products__items-left {
-    padding-right: 8px;
+  .item-img-v {
+    display: inline-block;
+    width: 100%;
+    height: 380px;
+    border-radius: 14px;
+    overflow: hidden;
   }
 
-  .products__items-right {
-    padding-left: 8px;
+  .bg-df {
+    background-repeat: no-repeat;
   }
 
-  .products__items-left {
-    min-height: 100%;
-
-    div:last-child {
-      display: flex;
-      height: 100%;
-      column-gap: 8px;
-
-      img {
-        width: calc(100% - 8px);
-        height: 100%;
-      }
-    }
-
-    div:not(:last-child) {
-      margin-bottom: 16px;
-    }
+  .get-up-img {
+    background-image: url("../assets/img/get-up.png");
   }
 
-  .products__items-right {
-    min-height: 100%;
-    min-width: 100%;
+  .summer-img {
+    background-image: url("../assets/img/summer.png");
+  }
 
-    div:first-child {
-      display: flex;
-      height: 100%;
-      column-gap: 8px;
+  .pink-girl-img {
+    background-image: url("../assets/img/pink-girl.png");
+  }
 
-      img {
-        width: calc(100% - 8px);
-        height: 100%;
-        border-radius: 14px;
-      }
-    }
+  .curly-girl-img {
+    background-image: url("../assets/img/curly-girl.png");
+  }
 
-    div:not(:first-child) {
-      margin-bottom: 16px;
-      max-width: 100%;
-    }
+  .martini-girl-img {
+    background-image: url("../assets/img/martini-girl.png");
+  }
+
+  .white-girl-img {
+    background-image: url("../assets/img/white-girl.png");
+  }
+
+  .blue-girl-img {
+    background-image: url("../assets/img/blue-girl.png");
+  }
+
+  .red-girl-img {
+    background-image: url("../assets/img/red-girl.png");
   }
 
   a:hover {
@@ -164,12 +162,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
